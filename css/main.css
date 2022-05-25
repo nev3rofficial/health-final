@@ -144,11 +144,16 @@ body {
   margin-top: 5vh;
   position: relative;
   width: 75vw;
+  transition: transform 250ms ease;
 }
-
 .image img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
   vertical-align: top;
+}
+.image img:hover {
+  transform: scale(1.05);
 }
 
 .image:after, .image:before {
@@ -178,9 +183,11 @@ body {
   width: 100%;
   color: #BCCCE0;
   z-index: 1;
-  padding: 12.5vh 0px;
+  padding: 7.5vh 0px;
   line-height: 25vh;
   text-align: center;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .image:hover:after, .image:hover:before {
