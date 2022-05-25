@@ -1,24 +1,25 @@
-@import "contact";
+
 @import "home";
 @import "platforms";
-@import "releases";
+
 
 ::-webkit-scrollbar {
   width: 10px;
+  transition: all 250ms ease-in-out;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #02010A;
+  background: #555;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #202024;
+  background: $blue;
   border-radius: 3px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #343439;
+  background: $green;
 }

@@ -19,105 +19,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.contacts {
-  margin-left: 15vw;
-  margin-top: 5vh;
-  margin-bottom: 10vh;
-}
-.contacts h3 {
-  margin-bottom: 4vh;
-  color: #F7F7FF;
-  font-family: "Jost", sans-serif;
-  font-size: 1.25em;
-  word-spacing: 0.25em;
-}
-.contacts h3 span {
-  word-spacing: 1em;
-}
-.contacts .contactlinks {
-  margin-top: 8vh;
-  float: left;
-  position: absolute;
-}
-.contacts .contactlinks .email {
-  line-height: 7.5vh;
-  background-position: center;
-  display: flex;
-  height: 6.5vh;
-  width: 20vw;
-  margin-bottom: 2.5vh;
-  color: #623CEA;
-  transition: color 250ms ease-in-out;
-  -webkit-transition: color 250ms ease-in-out;
-  -moz-transition: color 250ms ease-in-out;
-  -o-transition: color 250ms ease-in-out;
-}
-.contacts .contactlinks .email a {
-  display: flex;
-  margin-left: -1vw;
-  margin-top: -2vh;
-  display: flex;
-  background-position: center;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  height: 7.5vh;
-  width: 17.5vw;
-  padding-left: 1vw;
-  padding-right: 0vw;
-  text-decoration: none;
-  font-size: 1rem;
-  font-family: "Ubuntu";
-  color: #623CEA;
-  transition: color 250ms ease-in-out;
-  -webkit-transition: color 250ms ease-in-out;
-  -moz-transition: color 250ms ease-in-out;
-  -o-transition: color 250ms ease-in-out;
-}
-.contacts .contactlinks .email a:hover {
-  font-size: 0;
-}
-.contacts .contactlinks .email a:hover:after {
-  content: attr(data-hover);
-  font-size: 1rem;
-  color: #f4bbd3;
-}
-.contacts .contactlinks #contacttxt {
-  display: inline;
-  font-size: 1em;
-  font-family: "Ubuntu";
-  color: #F7F7FF;
-  float: left;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.contacts .contactlinks .msg {
-  margin-top: 6.5vh;
-}
-.contacts .contactlinks .msg a {
-  display: flex;
-  margin-left: -1vw;
-  margin-top: 0vh;
-  display: flex;
-  background-position: center;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  height: 100%;
-  width: 25vw;
-  padding-left: 1vw;
-  padding-right: 0vw;
-  text-decoration: none;
-  font-size: 1em;
-  font-family: "Ubuntu";
-  color: #623CEA;
-  transition: color 250ms ease-in-out;
-  -webkit-transition: color 250ms ease-in-out;
-  -moz-transition: color 250ms ease-in-out;
-  -o-transition: color 250ms ease-in-out;
-}
-.contacts .contactlinks .msg a:hover {
-  color: #F4BBD3;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -135,7 +36,7 @@ html, body {
 }
 
 body {
-  background-color: black;
+  background-color: #312F2F;
   height: 100%;
   align-content: center;
 }
@@ -145,8 +46,9 @@ body {
   position: relative;
   padding-bottom: 5vh;
   margin-top: 1.5vh;
-  background-color: #0A0528;
+  background-color: #BCCCE0;
   align-self: center;
+  display: flex;
   padding-left: 0;
   padding-right: 0;
   margin-left: 1.5vh;
@@ -189,6 +91,14 @@ body {
 .title a:hover {
   transform: scale(1.05);
 }
+.title a:hover h1, .title a:hover h2 {
+  color: #0F8B8D;
+  transition: all 250ms ease-in-out;
+}
+.title a:hover canvas {
+  background-color: #0F8B8D;
+  transition: all 250ms ease-in-out;
+}
 .title h1 {
   margin-bottom: 10vh;
   margin-top: 0;
@@ -199,11 +109,12 @@ body {
   display: inline;
   align-content: left;
   font-size: 4.2em;
-  color: #F7F7FF;
+  color: #312F2F;
   font-family: "Jost", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-variant: small-caps;
   word-spacing: 0.3em;
+  letter-spacing: 1.5vw;
   width: 50vw;
 }
 .title canvas {
@@ -213,102 +124,20 @@ body {
   margin-left: 0.1vw;
   width: 12.5vw;
   height: 0.8%;
-  background-color: #623CEA;
+  background-color: #007991;
 }
 .title h2 {
   margin-top: 0vh;
   margin-bottom: 0;
   display: inline;
-  width: -1vw;
+  width: -10vw;
   font-size: 2.2em;
-  color: #F4BBD3;
+  color: #995D81;
   font-family: "Jost", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-stretch: ultra-expanded;
   word-spacing: 0.1em;
   width: 50vw;
-}
-
-.studio img {
-  margin-bottom: 10vh;
-  margin-left: 15vw;
-  width: 75vw;
-}
-
-.indextext {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  padding-left: 15.15vw;
-  color: #F7F7FF;
-  font-family: "ubuntu", sans-serif;
-  font-size: 1em;
-  line-height: 2.6;
-  font-weight: 200;
-}
-.indextext a {
-  text-decoration: none;
-  color: #623CEA;
-  transition: all 250ms ease;
-}
-.indextext a:hover {
-  color: #F4BBD3;
-  transform: scale(2.025);
-}
-
-.bottomlinks {
-  margin-top: 4vh;
-  margin-bottom: 4vh;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-  display: flex;
-  justify-content: space-around;
-}
-.bottomlinks a {
-  color: #F4BBD3;
-  font-size: 1.5em;
-  font-family: "Jost", sans-serif;
-  text-decoration: none;
-  transition: all 250ms ease-in-out;
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-}
-.bottomlinks a:hover {
-  transform: scale(1.15);
-}
-
-#footer {
-  margin-top: 0.2vh;
-  margin-bottom: 0.8vh;
-  padding-top: 0.4vh;
-  padding-bottom: 0.8vh;
-  margin-left: 0;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color: #779BE7;
-  font-family: "Muli", sans-serif;
-  font-weight: 300;
-  font-size: 0.75em;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-}
-
-#platcontent h3 {
-  font-size: 1.25em;
-  font-family: "Jost", sans-serif;
-  color: #F7F7FF;
-}
-
-.platforms {
-  margin-left: 15.15vw;
-  margin-top: 5vh;
-  margin-bottom: 10vh;
 }
 
 .image {
@@ -343,17 +172,15 @@ body {
 .image:before {
   text-align: center;
   content: attr(data-content);
-  display: inline;
+  display: inherit;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.2em;
   width: 100%;
-  color: #F7F7FF;
+  color: #BCCCE0;
   z-index: 1;
-  padding: 4px 10px;
+  padding: 12.5vh 0px;
   line-height: 25vh;
   text-align: center;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
 }
 
 .image:hover:after, .image:hover:before {
@@ -361,58 +188,94 @@ body {
 }
 
 .image {
-  width: 75vw;
-  height: 14vw;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15.1vw;
+  width: 25vw;
+  height: 25vw;
 }
 .image img {
   height: 100%;
   width: 100%;
 }
 
-.singles {
-  margin-left: 15.15vw;
-  color: #F7F7FF;
-  font-family: "Jost", sans-serif;
-  word-spacing: 0.25em;
-  font-size: 1.3em;
+.indextext {
+  margin-top: 5vh;
+  margin-bottom: 0vh;
+  padding-left: 15.15vw;
+  color: #312F2F;
+  font-family: "ubuntu", sans-serif;
+  font-size: 1em;
+  line-height: 1.75;
+  font-weight: bold;
+}
+.indextext a {
+  text-decoration: none;
+  color: #007991;
+  transition: all 250ms ease;
+}
+.indextext a:hover {
+  color: #995D81;
+  transform: scale(2.025);
 }
 
-.gallery {
-  margin-bottom: 10vh;
-  margin-left: 14.6vw;
-  display: flex;
-  flex-direction: column;
-}
-.gallery .row {
-  display: flex;
-  justify-content: justify-content;
+.images {
+  bottom: 0;
   width: 100%;
+  display: flex;
 }
-.gallery .row iframe {
-  font-family: "Ubuntu", cursive;
+
+#footer {
+  margin-top: 0.2vh;
+  margin-bottom: 0.8vh;
+  padding-top: 0.4vh;
+  padding-bottom: 0.8vh;
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #779BE7;
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  font-size: 0.75em;
 }
-.gallery iframe {
-  margin: 0.5vw;
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+#platcontent h3 {
+  font-size: 1.25em;
+  font-family: "Jost", sans-serif;
+  color: #312F2F;
+}
+
+.platforms {
+  margin-left: 15.15vw;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
 }
 
 ::-webkit-scrollbar {
   width: 10px;
+  transition: all 250ms ease-in-out;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #02010A;
+  background: #555;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #202024;
+  background: #007991;
   border-radius: 3px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #343439;
+  background: #0F8B8D;
 }
 
 /*# sourceMappingURL=main.css.map */
