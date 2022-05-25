@@ -23,3 +23,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background: $green;
 }
+
+::selection {
+  background: $green;
+  color: $background;
+}

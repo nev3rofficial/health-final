@@ -285,4 +285,9 @@ body {
   background: #0F8B8D;
 }
 
+::selection {
+  background: #0F8B8D;
+  color: #BCCCE0;
+}
+
 /*# sourceMappingURL=main.css.map */
