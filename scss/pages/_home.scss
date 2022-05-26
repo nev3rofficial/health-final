@@ -54,17 +54,16 @@ body {
 
 .title {
   margin-left: 0vw;
-  margin-right: 20vw;
+  margin-right: 0;
   margin-bottom: 0vh;
-  width: 75vw;
   display: block;
   a {
     margin-right: 0vw;;
     margin-left: 14vw;
     padding-left: 1vw;
     padding-bottom: 1vh;
-    width: 75vw;
-    height: -1%;
+//    width: 75vw;
+//    height: -1%;
     display: inline;
     text-decoration: none;
     transition: all 250ms ease-in-out;
@@ -82,13 +81,13 @@ body {
       }
       transform: scale(1.05);
     }
-    width: 30vw;
+    width: 62vw;
     display: block;
   }
   h1 {
     margin-bottom: 10vh;
     margin-top: 0;
-    margin-left: -0.25vW;
+    margin-left: -0.1vW;
     padding-top: 2vh;
     padding-bottom: 1vh;
     width: 75vw;
@@ -96,17 +95,17 @@ body {
     align-content: left;
     font-size: 4.2em;
     color: $white;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Anurati', sans-serif;
     font-weight: 500;
     font-variant: small-caps;
-    word-spacing: 0.3em;
-    letter-spacing: 1.5vw;
+    word-spacing: 1vw;
+    letter-spacing: 1vw;
     width: 75vw;
   }
   canvas {
-      margin-top: 0;
-      margin-bottom: 1vh;
-      margin-right: 15vw;
+      margin-top: 2vh;
+      margin-bottom: 0vh;
+      margin-right: 14.9vw;
       margin-left: 0.1vw;
       width: 12.5vw;
       height: 0.8%;
@@ -115,15 +114,15 @@ body {
   h2 {
     margin-top: 0vh;
     margin-bottom: 0;
-    display: inline;
-    width: -10vw;
-    font-size: 2.2em;
+    display: block;
+    font-size: 2.5em;
     color: $pink;
     font-family: 'Jost', sans-serif;
     font-weight: 500;
     font-stretch: ultra-expanded;
     word-spacing: 0.1em;
     width: 50vw;
+    align-items: left;
   }
 }
 
@@ -195,6 +194,7 @@ body {
   margin-top: 5vh;
   margin-bottom: 0vh;
   padding-left: 15.15vw;
+  width: 75vw;
   color: $white;
   font-family: 'Muli';
   font-size: 1em;
@@ -226,9 +226,9 @@ body {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  color: $steel;
+  color: $pink;
   font-family: 'Muli', sans-serif;
-  font-weight: 300;
+  font-weight: bolder;
   font-size: 0.75em;
 }
 
