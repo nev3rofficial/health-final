@@ -6,12 +6,33 @@ html {
   font-size: 1.9vh;
 }
 
-@media (max-width: 1024px) {
-
+@media (max-width: 2160px) {
+  .images {
+    display: flex;
+    .image {
+      width: 30vw;
+    }
+  }
+  .image:before {
+      content: attr(data-content);
+      line-height: 2750%;
+  }
 }
 
 @media (max-width: 600px) {
-
+  .images {
+    display: block;
+    .image {
+      width: 60vw;
+    }
+    #beachmusic {
+      margin-left: 15.1vw;
+    }
+  }
+  .image:before {
+      content: attr(data-content);
+      line-height: 1750%;
+  }
 }
 
 html, body {
@@ -45,174 +66,183 @@ body {
   align-self: center;
   .content {
     padding-bottom: 2.5rem;
-  }
-}
+    .spacer {
+      height: 8vh;
+    }
 
-.spacer {
-  height: 8vh;
-}
-
-.title {
-  margin-left: 0vw;
-  margin-right: 0;
-  margin-bottom: 0vh;
-  display: block;
-  a {
-    margin-right: 0vw;;
-    margin-left: 14vw;
-    padding-left: 1vw;
-    padding-bottom: 1vh;
-//    width: 75vw;
-//    height: -1%;
-    display: inline;
-    text-decoration: none;
-    transition: all 250ms ease-in-out;
-    -webkit-transition: all 250ms ease-in-out;
-    -moz-transition: all 250ms ease-in-out;
-    -o-transition: all 250ms ease-in-out;
-    &:hover {
-      h1, h2 {
-        color: $green;
+    .title {
+      margin-left: 0vw;
+      margin-right: 0;
+      margin-bottom: 0vh;
+      display: block;
+      .homelink {
+        margin-right: 0vw;;
+        margin-left: 14vw;
+        padding-left: 1vw;
+        padding-bottom: 1vh;
+    //    width: 75vw;
+    //    height: -1%;
+        display: inline;
+        text-decoration: none;
         transition: all 250ms ease-in-out;
+        -webkit-transition: all 250ms ease-in-out;
+        -moz-transition: all 250ms ease-in-out;
+        -o-transition: all 250ms ease-in-out;
+        &:hover {
+          h1, h2 {
+            color: $green;
+            transition: all 250ms ease-in-out;
+          }
+          canvas {
+            background-color: $green;
+            transition: all 250ms ease-in-out;
+          }
+          transform: scale(1.05);
+        }
+        width: 62vw;
+        display: block;
+      }
+      h1 {
+        margin-bottom: 10vh;
+        margin-top: 0;
+        margin-left: -0.1vW;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+        display: inline;
+        align-content: left;
+        font-size: 7vh;
+        color: $white;
+        font-family: 'Anurati', sans-serif;
+        font-weight: 500;
+        font-variant: small-caps;
+        word-spacing: 1vw;
+        letter-spacing: 1vw;
+        width: 75vw;
       }
       canvas {
-        background-color: $green;
-        transition: all 250ms ease-in-out;
+          margin-top: 2vh;
+          margin-bottom: 0vh;
+          margin-right: 14.9vw;
+          margin-left: 0.1vw;
+          width: 15em;
+          height: 0.25em;
+          background-color: $blue;
+        }
+      h2 {
+        margin-top: 0vh;
+        margin-bottom: 0;
+        display: block;
+        font-size: 4vh;
+        color: $pink;
+        font-family: 'Jost', sans-serif;
+        font-weight: 500;
+        font-stretch: ultra-expanded;
+        word-spacing: 0.1em;
+        width: 60vw;
+        align-items: left;
       }
-      transform: scale(1.05);
     }
-    width: 62vw;
-    display: block;
-  }
-  h1 {
-    margin-bottom: 10vh;
-    margin-top: 0;
-    margin-left: -0.1vW;
-    padding-top: 2vh;
-    padding-bottom: 1vh;
-    display: inline;
-    align-content: left;
-    font-size: 7vh;
-    color: $white;
-    font-family: 'Anurati', sans-serif;
-    font-weight: 500;
-    font-variant: small-caps;
-    word-spacing: 1vw;
-    letter-spacing: 1vw;
-    width: 75vw;
-  }
-  canvas {
-      margin-top: 2vh;
+
+    .images{
+
+    }
+
+
+    .indextext {
+      margin-top: 5vh;
       margin-bottom: 0vh;
-      margin-right: 14.9vw;
-      margin-left: 0.1vw;
-      width: 15em;
-      height: 0.25em;
-      background-color: $blue;
+      padding-left: 15.15vw;
+      width: 80vw;
+      color: $white;
+      font-family: 'Muli';
+      font-size: 1em;
+      line-height: 1.75;
+      font-weight: bold;
     }
-  h2 {
-    margin-top: 0vh;
-    margin-bottom: 0;
-    display: block;
-    font-size: 4vh;
-    color: $pink;
-    font-family: 'Jost', sans-serif;
-    font-weight: 500;
-    font-stretch: ultra-expanded;
-    word-spacing: 0.1em;
-    width: 75vw;
-    align-items: left;
-  }
-}
 
-.image {
-    margin-top: 5vh;
-    position: relative;
-    width: 75vw;
-    transition: transform 250ms ease;
-    img {
-      max-width: 100%;
-      max-height: 100%;
-      display:  block;
-      vertical-align: top;
-      &:hover {
-        transform: scale(1.05);
+    .images {
+      bottom: 0;
+      width: 100%;
+      a {
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
       }
-    }
-}
+      .image {
+          margin-top: 5vh;
+          position: relative;
+//          width: 75vw;
+          transition: transform 250ms ease;
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            display:  block;
+            vertical-align: top;
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+          .imagelink {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+        }
+      }
 
-.image:after, .image:before {
-    position: absolute;
-    opacity: 0;
-    transition: all 0.25s ease-in-out;
-    -webkit-transition: all 250ms ease-in-out;
-    -moz-transition: all 250ms ease-in-out;
-    -o-transition: all 250ms ease-in-out;
-}
-.image:after {
-    content: '\A';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.8);
-}
-.image:before {
-    content: attr(data-content);
-    display: inherit;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.2vw;
-    width: 100%;
-    color: $background;
-    z-index: 1;
-    line-height: 2000%;
-    text-align: center;
-    align-items: center;
-    vertical-align: middle;
-}
-.image:hover:after, .image:hover:before {
-    opacity: 1;
-}
+      .image:after, .image:before {
+          position: absolute;
+          opacity: 0;
+          transition: all 0.25s ease-in-out;
+          -webkit-transition: all 250ms ease-in-out;
+          -moz-transition: all 250ms ease-in-out;
+          -o-transition: all 250ms ease-in-out;
+      }
+      .image:after {
+          content: '\A';
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: rgba(0,0,0,0.8);
+      }
+      .image:before {
+          content: attr(data-content);
+          display: inherit;
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 100%;
+          font-weight: 400;
+          width: 100%;
+          color: $background;
+          z-index: 1;
+          text-align: center;
+          align-items: center;
+          vertical-align: middle;
+      }
+      .image:hover:after, .image:hover:before {
+          opacity: 1;
+      }
 
-.image {
-  align-items: center;
-  justify-content: center;
-  margin-left: 15.1vw;
-  width: 25vw;
-  height: 25vw;
-  img {
-    height: 100%;
-    width: 100%;
+      .image {
+        align-items: center;
+        justify-content: center;
+        margin-left: 5vw;
+//        width: 25vw;
+//        height: 25vw;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      #houseofsugar {
+        margin-left: 15.1vw;
+      }
+
+      }
   }
 }
 
-
-.indextext {
-  margin-top: 5vh;
-  margin-bottom: 0vh;
-  padding-left: 15.15vw;
-  width: 75vw;
-  color: $white;
-  font-family: 'Muli';
-  font-size: 1em;
-  line-height: 1.75;
-  font-weight: bold;
-  a {
-    text-decoration: none;
-    color: $blue;
-    transition: all 250ms ease;
-    &:hover {
-      color: $pink;
-      transform: scale(2.025);
-    }
-  }
-}
-
-.images {
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  }
 
 #footer {
   margin-top: 0.2vh;
@@ -224,7 +254,7 @@ body {
   justify-content: center;
   text-decoration: none;
   color: $pink;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: bolder;
   font-size: 0.75em;
 }

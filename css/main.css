@@ -27,6 +27,35 @@ html {
   font-size: 1.9vh;
 }
 
+@media (max-width: 2160px) {
+  .images {
+    display: flex;
+  }
+  .images .image {
+    width: 30vw;
+  }
+
+  .image:before {
+    content: attr(data-content);
+    line-height: 2750%;
+  }
+}
+@media (max-width: 600px) {
+  .images {
+    display: block;
+  }
+  .images .image {
+    width: 60vw;
+  }
+  .images #beachmusic {
+    margin-left: 15.1vw;
+  }
+
+  .image:before {
+    content: attr(data-content);
+    line-height: 1750%;
+  }
+}
 html, body {
   padding: 0;
   margin: 0;
@@ -60,18 +89,16 @@ body {
 .wrapper .content {
   padding-bottom: 2.5rem;
 }
-
-.spacer {
+.wrapper .content .spacer {
   height: 8vh;
 }
-
-.title {
+.wrapper .content .title {
   margin-left: 0vw;
   margin-right: 0;
   margin-bottom: 0vh;
   display: block;
 }
-.title a {
+.wrapper .content .title .homelink {
   margin-right: 0vw;
   margin-left: 14vw;
   padding-left: 1vw;
@@ -85,18 +112,18 @@ body {
   width: 62vw;
   display: block;
 }
-.title a:hover {
+.wrapper .content .title .homelink:hover {
   transform: scale(1.05);
 }
-.title a:hover h1, .title a:hover h2 {
+.wrapper .content .title .homelink:hover h1, .wrapper .content .title .homelink:hover h2 {
   color: #0F8B8D;
   transition: all 250ms ease-in-out;
 }
-.title a:hover canvas {
+.wrapper .content .title .homelink:hover canvas {
   background-color: #0F8B8D;
   transition: all 250ms ease-in-out;
 }
-.title h1 {
+.wrapper .content .title h1 {
   margin-bottom: 10vh;
   margin-top: 0;
   margin-left: -0.1vW;
@@ -113,7 +140,7 @@ body {
   letter-spacing: 1vw;
   width: 75vw;
 }
-.title canvas {
+.wrapper .content .title canvas {
   margin-top: 2vh;
   margin-bottom: 0vh;
   margin-right: 14.9vw;
@@ -122,7 +149,7 @@ body {
   height: 0.25em;
   background-color: #007991;
 }
-.title h2 {
+.wrapper .content .title h2 {
   margin-top: 0vh;
   margin-bottom: 0;
   display: block;
@@ -132,27 +159,51 @@ body {
   font-weight: 500;
   font-stretch: ultra-expanded;
   word-spacing: 0.1em;
-  width: 75vw;
+  width: 60vw;
   align-items: left;
 }
-
-.image {
+.wrapper .content .indextext {
+  margin-top: 5vh;
+  margin-bottom: 0vh;
+  padding-left: 15.15vw;
+  width: 80vw;
+  color: #312F2F;
+  font-family: "Muli";
+  font-size: 1em;
+  line-height: 1.75;
+  font-weight: bold;
+}
+.wrapper .content .images {
+  bottom: 0;
+  width: 100%;
+}
+.wrapper .content .images a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+.wrapper .content .images .image {
   margin-top: 5vh;
   position: relative;
-  width: 75vw;
   transition: transform 250ms ease;
 }
-.image img {
+.wrapper .content .images .image img {
   max-width: 100%;
   max-height: 100%;
   display: block;
   vertical-align: top;
 }
-.image img:hover {
+.wrapper .content .images .image img:hover {
   transform: scale(1.05);
 }
-
-.image:after, .image:before {
+.wrapper .content .images .image .imagelink {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.wrapper .content .images .image:after, .wrapper .content .images .image:before {
   position: absolute;
   opacity: 0;
   transition: all 0.25s ease-in-out;
@@ -160,8 +211,7 @@ body {
   -moz-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
 }
-
-.image:after {
+.wrapper .content .images .image:after {
   content: "\a";
   width: 100%;
   height: 100%;
@@ -169,62 +219,33 @@ body {
   left: 0;
   background: rgba(0, 0, 0, 0.8);
 }
-
-.image:before {
+.wrapper .content .images .image:before {
   content: attr(data-content);
   display: inherit;
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.2vw;
+  font-size: 100%;
+  font-weight: 400;
   width: 100%;
   color: #BCCCE0;
   z-index: 1;
-  line-height: 2000%;
   text-align: center;
   align-items: center;
   vertical-align: middle;
 }
-
-.image:hover:after, .image:hover:before {
+.wrapper .content .images .image:hover:after, .wrapper .content .images .image:hover:before {
   opacity: 1;
 }
-
-.image {
+.wrapper .content .images .image {
   align-items: center;
   justify-content: center;
-  margin-left: 15.1vw;
-  width: 25vw;
-  height: 25vw;
+  margin-left: 5vw;
 }
-.image img {
+.wrapper .content .images .image img {
   height: 100%;
   width: 100%;
 }
-
-.indextext {
-  margin-top: 5vh;
-  margin-bottom: 0vh;
-  padding-left: 15.15vw;
-  width: 75vw;
-  color: #312F2F;
-  font-family: "Muli";
-  font-size: 1em;
-  line-height: 1.75;
-  font-weight: bold;
-}
-.indextext a {
-  text-decoration: none;
-  color: #007991;
-  transition: all 250ms ease;
-}
-.indextext a:hover {
-  color: #995D81;
-  transform: scale(2.025);
-}
-
-.images {
-  bottom: 0;
-  width: 100%;
-  display: flex;
+.wrapper .content .images #houseofsugar {
+  margin-left: 15.1vw;
 }
 
 #footer {
@@ -237,7 +258,7 @@ body {
   justify-content: center;
   text-decoration: none;
   color: #995D81;
-  font-family: "Muli", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: bolder;
   font-size: 0.75em;
 }
