@@ -102,10 +102,9 @@ body {
   margin-left: -0.1vW;
   padding-top: 2vh;
   padding-bottom: 1vh;
-  width: 75vw;
   display: inline;
   align-content: left;
-  font-size: 4.2em;
+  font-size: 7vh;
   color: #312F2F;
   font-family: "Anurati", sans-serif;
   font-weight: 500;
@@ -119,21 +118,21 @@ body {
   margin-bottom: 0vh;
   margin-right: 14.9vw;
   margin-left: 0.1vw;
-  width: 12.5vw;
-  height: 0.8%;
+  width: 15em;
+  height: 0.25em;
   background-color: #007991;
 }
 .title h2 {
   margin-top: 0vh;
   margin-bottom: 0;
   display: block;
-  font-size: 2.5em;
+  font-size: 4vh;
   color: #995D81;
   font-family: "Jost", sans-serif;
   font-weight: 500;
   font-stretch: ultra-expanded;
   word-spacing: 0.1em;
-  width: 50vw;
+  width: 75vw;
   align-items: left;
 }
 
@@ -172,16 +171,14 @@ body {
 }
 
 .image:before {
-  text-align: center;
   content: attr(data-content);
   display: inherit;
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.2vw;
   width: 100%;
   color: #BCCCE0;
   z-index: 1;
-  padding: 7.5vh 0px;
-  line-height: 25vh;
+  line-height: 2000%;
   text-align: center;
   align-items: center;
   vertical-align: middle;
