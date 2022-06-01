@@ -15,7 +15,7 @@ html {
   }
   .image:before {
       content: attr(data-content);
-      line-height: 2750%;
+      line-height: 2200%;
   }
 }
 
@@ -211,7 +211,7 @@ body {
           content: attr(data-content);
           display: inherit;
           font-family: 'Ubuntu', sans-serif;
-          font-size: 100%;
+          font-size: 125%;
           font-weight: 400;
           width: 100%;
           color: $background;
