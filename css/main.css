@@ -247,6 +247,9 @@ body {
 .wrapper .content .images #houseofsugar {
   margin-left: 15.1vw;
 }
+.wrapper .content #ct {
+  text-decoration: none;
+}
 
 #footer {
   margin-top: 0.2vh;
