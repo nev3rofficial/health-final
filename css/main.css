@@ -247,8 +247,16 @@ body {
 .wrapper .content .images #houseofsugar {
   margin-left: 15.1vw;
 }
-.wrapper .content #ct {
+.wrapper .content .citelink {
   text-decoration: none;
+  transition: all 250ms ease-in-out;
+}
+.wrapper .content .citelink p {
+  color: #007991;
+}
+.wrapper .content .citelink p:hover {
+  color: #0F8B8D;
+  text-decoration: underline;
 }
 
 #footer {
@@ -281,6 +289,33 @@ body {
   margin-left: 15.15vw;
   margin-top: 5vh;
   margin-bottom: 10vh;
+}
+
+.citations {
+  margin-top: 5vh;
+  margin-bottom: 0vh;
+  padding-left: 15.15vw;
+  width: 80vw;
+  color: #312F2F;
+  font-family: "Muli";
+  font-size: 1.1em;
+  line-height: 1.75;
+  font-weight: bold;
+}
+.citations ul li {
+  color: #007991;
+  margin-bottom: 1em;
+}
+.citations ul li:hover {
+  color: #0F8B8D;
+}
+.citations ul li a {
+  text-decoration: none;
+  color: #007991;
+}
+.citations ul li a:hover {
+  color: #0F8B8D;
+  text-decoration: underline;
 }
 
 ::-webkit-scrollbar {

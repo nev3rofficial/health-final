@@ -240,8 +240,16 @@ body {
       }
 
       }
-    #ct {
+    .citelink {
       text-decoration: none;
+      transition: all 250ms ease-in-out;
+      p {
+        color: $blue;
+        &:hover {
+          color: $green;
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
