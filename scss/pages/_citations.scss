@@ -1,13 +1,15 @@
-.citations {
+.list {
   margin-top: 5vh;
   margin-bottom: 0vh;
   padding-left: 15.15vw;
   width: 80vw;
   color: $white;
   font-family: 'Muli';
-  font-size: 1.1em;
   line-height: 1.75;
   font-weight: bold;
+}
+#citations {
+  font-size: 1.1em;
   ul {
 
     li {
