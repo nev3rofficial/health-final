@@ -166,12 +166,12 @@ body {
   margin-top: 2.6;
   margin-bottom: 0vh;
   margin-left: 15.15vw;
-  width: 80vw;
+  width: 70vw;
   color: #312F2F;
   font-family: "Muli";
-  font-size: 1em;
+  font-size: 1.05em;
   line-height: 1.3;
-  font-weight: bold;
+  font-weight: 500;
 }
 .wrapper .content #ct {
   width: 30vw;
@@ -243,7 +243,7 @@ body {
 .wrapper .content .images .image {
   align-items: center;
   justify-content: center;
-  margin-left: 5vw;
+  margin-left: 10vw;
 }
 .wrapper .content .images .image img {
   height: 100%;
@@ -267,6 +267,7 @@ body {
 }
 .wrapper .content .citelink p {
   color: #007991;
+  font-weight: bold;
   margin-top: 5vh;
 }
 .wrapper .content .citelink p:hover {
@@ -314,7 +315,7 @@ body {
   color: #312F2F;
   font-family: "Muli";
   line-height: 1.75;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 #citations {
