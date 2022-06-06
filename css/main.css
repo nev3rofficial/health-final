@@ -340,6 +340,8 @@ body {
 
 h1 {
   font-size: 10vh;
+  color: #007991;
+  margin-left: 1vw;
 }
 
 ::-webkit-scrollbar {
