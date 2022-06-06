@@ -73,7 +73,7 @@ body {
 .wrapper {
   min-height: 93vh;
   position: relative;
-  padding-bottom: 5vh;
+  padding-bottom: 2vh;
   margin-top: 1.5vh;
   background-color: #BCCCE0;
   align-self: center;
@@ -170,7 +170,7 @@ body {
   color: #312F2F;
   font-family: "Muli";
   font-size: 1.05em;
-  line-height: 1.3;
+  line-height: 1.2;
   font-weight: 500;
 }
 .wrapper .content #ct {
@@ -259,6 +259,7 @@ body {
 .wrapper .content #bpoints {
   color: #995D81;
   font-size: 1.3em;
+  margin-bottom: 10vh;
 }
 .wrapper .content .citelink {
   text-decoration: none;
